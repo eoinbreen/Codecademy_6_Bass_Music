@@ -1,0 +1,23 @@
+
+<div class="show row">
+  <div class="cover col-md-4">  </div>
+
+  <div class="col-sm-8">
+    <h3 class="album-title"><% @album.title%> </h3>
+    <p class="album-artist"> <% @album.artist%> </p>
+  </div>
+ </div>
+
+    
+<% @tracks.each do |track|%>
+    
+		<div class="track row">
+      <div class="name col-md-8"> 
+        <p class="name"> <%= track.name %> </p>						</div>
+      
+  	<div class="minutes col-md-4">
+      <p class="minutes"><%= track.minutes %>  min</p>		</div>
+
+  </div>
+<% end %>
+
